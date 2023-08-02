@@ -349,21 +349,6 @@ body{
   
 }
 
-/* Arka plan rengini uygun renk yap */
-.nav-item.contact a {
-  background-color: #f0ad4e;
-  font-family: 'Nunito', sans-serif;
-  color: #ffffff;
-  text-decoration: none;
-  padding: 4px 15px;
-  border-radius: 5px;
-}
-
-/* Hover efekti ekle */
-.nav-item.contact a:hover {
-  background-color: #f8b73e;
-  color: #ffffff;
-}
 .navbar-nav .nav-item {
   margin-right: 5px; 
 }
