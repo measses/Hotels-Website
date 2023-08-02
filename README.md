@@ -27,7 +27,7 @@ https://hotels-website.vercel.app
 
 ## Ekran Görüntüleri
 
-![1](https://github.com/measses/Hotels-Website/assets/67739721/68a2ac70-ac57-47bb-89c9-1aa39cc72972)
+![5555](https://github.com/measses/Hotels-Website/assets/67739721/599289ef-16e2-4456-96e7-273926b9a270)
 ![2](https://github.com/measses/Hotels-Website/assets/67739721/c28e2e17-a9a9-4586-a442-3c4c55d4bd3a)
 ![3](https://github.com/measses/Hotels-Website/assets/67739721/5345defb-dc1e-4eb3-8d06-45295364abb2)
 ![4](https://github.com/measses/Hotels-Website/assets/67739721/d0843491-0e1b-41a7-9a54-e47051d8ea21)
