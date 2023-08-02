@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+*{
+    font-family: 'Mukta', sans-serif;
+}
+
+body{
+    background: #f1fbff;
+}
+
+.section-padding{
+    padding: 100px 0;
+}
+
+/* Carousel resimlerini tam ekran yüksekliğe getir */
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+/* Carousel içeriklerini düzenle */
+.carousel-caption {
+  bottom: 50px;
+  z-index: 2;
+  text-align: center;
+}
+
+.carousel-caption h5 {
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-top: 25px;
+}
+
+.carousel-caption p {
+  width: 60%;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.9;
+  font-family: 'Abel', sans-serif;
+}
+
+/* Carousel arka plana yarı saydam bir katman ekle */
+.carousel-inner::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Carousel resimlerini tam genişlikte göster */
+.carousel-inner .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.navbar-nav a {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar-light .navbar-brand {
+    color: #000;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: #000;
+}
+.navbar-light .navbar-nav .navbar-link{
+    color: #000;
+}
+
+.w-100{
+    height: 100vh;
+}
+
+/*Media Queries*/
+@media screen and (min-width: 768px) and (max-width: 991){
+    .carousel-caption{
+        bottom: 370px;
+    }
+    .carousel-caption p{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:767px) {
+    .navbar-nav{
+        text-align: center;
+    }
+    .carousel-caption{
+        bottom:155px
+    }
+    .carousel-caption h5{
+        font-size: 17px;
+    }
+    .carousel-caption a {
+        padding: 10px 15px;
+    }
+    .carousel-caption p{
+        width: 100%;
+        line-height: 1.6;
+        font-size: 16px;
+    }
+}
+
+.services .card-body i {
+    font-size: 40px;
+}
+
+.gallery-menu{
+	text-align:center;
+}
+.gallery-menu ul li{
+	display:inline-block;
+	margin:0;
+	list-style:none;
+	padding:10px 15px;
+	cursor:pointer;
+	-webkit-transition:all 05s ease;
+	-moz-transition:all 05s ease;
+	-ms-transition:all 05s ease;
+	-o-transition:all 05s ease;
+	transition:all .5s ease;
+}
+
+.gallery-item{
+	/*width:100%;*/
+}
+.gallery-item .item{
+	/*width:303px;*/
+	float:left;
+	margin-bottom:10px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .gallery-item img {
+    transition: transform 0.3s ease;
+  }
+
+  .gallery-item .img-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    color: #fff;
+    font-size: 14px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .gallery-item .popup-btn:hover img {
+    transform: scale(1.1);
+  }
+
+  /* Yalnızca üzerine gelinen galeri öğelerinin büyüme ve açıklama metninin görünmesi için */
+  .gallery-item .item:hover img {
+    transform: scale(1.1);
+  }
+
+  .gallery-item .item:hover .img-caption {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+/* Dizayn renkleri (örnek olarak kırmızı ve mavi) */
+.contact-form {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.contact-form h2 {
+  color: #ff0000;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px 12px;
+  width: 100%;
+  margin-bottom: 15px;
+  /* İlgili elemanın üzerine gelince farklı bir renk ver */
+  transition: background-color 0.3s ease;
+}
+
+/* İlgili elemanın üzerine gelince farklı bir renk ver */
+.contact-form input[type="text"]:hover,
+.contact-form input[type="email"]:hover,
+.contact-form input[type="tel"]:hover,
+.contact-form textarea:hover {
+  background-color: #f5f5f5; /* Farklı bir renk (örnek olarak açık gri) */
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #bfc1ab;
+}
+
+/* Responsive tasarım için media query */
+@media (max-width: 767px) {
+  .contact-form {
+    padding: 15px;
+  }
+  
+  .contact-form button {
+    padding: 8px 15px;
+  }
+}
+
+  /* Footer styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0; /* Padding değerlerini düşürerek yüksekliği azaltın */
+  margin-top: 30px; /* Margin değerini düşürerek yüksekliği azaltın */
+}
+
+.footer h4 {
+  font-size: 20px; /* Yazı boyutunu düşürerek yüksekliği azaltın */
+  margin-bottom: 1
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+.footer-contact p {
+  line-height: 1.5;
+}
+
+.footer-links ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 5px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-social h4 {
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #666;
+  color: #fff;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #444;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+  .footer .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-contact, .footer-links, .footer-social {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 772px) {
+  .footer {
+    text-align: center; /* Footer içeriğini ortalıyor */
+  }
+}
+
+
+.nav-item.contact {
+  border: 1px  #f0ad4e;
+  border-radius: 5px;
+  padding: 5px 15px;
+  display: inline-block;
+  
+}
+
+/* Arka plan rengini uygun renk yap */
+.nav-item.contact a {
+  background-color: #f0ad4e;
+  font-family: 'Nunito', sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 4px 15px;
+  border-radius: 5px;
+}
+
+/* Hover efekti ekle */
+.nav-item.contact a:hover {
+  background-color: #f8b73e;
+  color: #ffffff;
+}
+.navbar-nav .nav-item {
+  margin-right: 5px; 
+}
+
+
+
