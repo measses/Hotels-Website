@@ -4,12 +4,12 @@
 Bu, kurgusal bir otel olan "HotelCons" için basit bir web sitesi projesidir. Web sitesi, Ana Sayfa, Hakkında, Hizmetler, Galeri ve İletişim gibi çeşitli bölümleri sergiliyor. HTML, CSS, Bootstrap ve JavaScript kullanılarak oluşturulmuştur
 
 ## Kullanılan Teknolojiler
-HTML
-CSS
-Bootstrap
-JavaScript
-Boxicons
-ScrollReveal
+HTML,
+CSS,
+Bootstrap,
+JavaScript,
+Boxicons,
+ScrollReveal.
 
 ## Özellikler
 Farklı cihazlar için duyarlı tasarım (masaüstü, tablet, mobil)
