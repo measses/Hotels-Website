@@ -359,3 +359,9 @@ body{
   }
 }
 
+@media (max-width: 992px) {
+  .wp-contact {
+    display: none;
+  }
+}
+
