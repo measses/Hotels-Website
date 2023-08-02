@@ -368,5 +368,9 @@ body{
   margin-right: 5px; 
 }
 
-
+@media (max-width: 891px) {
+  .about-text {
+    text-align: center;
+  }
+}
 
